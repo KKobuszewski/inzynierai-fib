@@ -9,7 +9,6 @@ cnt = 1
 def handle_signal(signum, frame):
     global running, cnt
     elapsed_time = time.time() - start_time
-    #print(f"\nOtrzymano sygnal {signum}. Czas dzialania: {elapsed_time:.2f} sekund.")
     print(f'{cnt:d} Fibonnaci numbers generated. Exiting.')
     running = False
 
@@ -28,6 +27,8 @@ def main():
 
     fn1 = 0
     fn2 = 1
+    
+    # adding some stuff in new branch...
     
     while running :#and (time.time() - start_time) < args.duration:
         elapsed_time = time.time() - start_time
